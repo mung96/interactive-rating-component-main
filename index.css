@@ -54,11 +54,8 @@ body{
     height: 50px;
     padding: 1px 1px;
     
-    background-color:#262F38;
+    background-color:rgb(15, 18, 22);
     border-radius: 50%;
-}
-.on {
-    background-color: orange;
 }
 
 .submit{

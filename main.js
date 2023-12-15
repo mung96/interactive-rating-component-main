@@ -1,19 +1,30 @@
 (()=>{
+    const initColor = 'rgb(15, 18, 22)';
+    const choicedColor = 'rgb(192, 192, 192)';
+    const hoverColor = 'rgb(255, 165, 0)';
 
     const numbers = document.querySelectorAll(".number");
     
     for(let i = 0;i<numbers.length;i++){
         let currentItem=numbers[i];
-        let currentItemBackground =currentItem.style.backgroundColor;
+        let currentBackground ;
+
         currentItem.addEventListener("mouseover",()=>{
-            currentItem.style.backgroundColor = 'orange';        
-    })
+            currentBackground = window.getComputedStyle(currentItem).backgroundColor;
+            currentItem.style.backgroundColor = hoverColor;       
+        })
         currentItem.addEventListener("mouseout",()=>{
-            currentItem.style.backgroundColor = '#262F38';
-    })
-        //Todo 클릭시 색상 변화 구현
-        // currentItem.addEventListener("click",()=>{
-        //     console.log('click');
-        // });
+            currentItem.style.backgroundColor = currentBackground;
+        })
+
+        currentItem.addEventListener('click',()=>{
+            if(currentBackground === initColor){
+                currentItem.style.backgroundColor = choicedColor;
+                currentBackground = choicedColor;
+            }else if(currentBackground === choicedColor){
+                currentItem.style.backgroundColor = initColor;
+                currentBackground = initColor;
+            }
+        })
     }
 })();
