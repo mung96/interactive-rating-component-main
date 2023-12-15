@@ -1,0 +1,72 @@
+html{
+    font-family:[Overpass];
+    font-weight: 400, 700;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    box-sizing: border-box;
+}
+
+#mainbox{
+    background-color: #1F2630;
+    position:absolute;
+    top:25vh;
+    left:40vw;
+    width:350px;
+    height:380px;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+}
+.starmark{
+    width:40px;
+    line-height: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#262F38;
+    text-align: center;
+    margin-top:15px;
+}
+.title{
+    color:white;
+    margin-top:30px;
+    font-size: 25px;
+}
+.text{
+    color:hsl(217, 12%, 63%);
+    font-size:15px;
+    margin-top:20px;
+    line-height:22px;
+    
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    
+}
+.number{
+    border: 1px solid black;
+    color:hsl(217, 12%, 63%);
+    width:50px;
+    line-height: 50px;
+    height: 50px;
+    padding: 1px 1px;
+    
+    background-color:#262F38;
+    border-radius: 50%;
+}
+.on {
+    background-color: orange;
+}
+
+.submit{
+    margin-top:40px;
+    width:100%;
+    height: 45px;
+    border-radius: 20px;
+}
+.choice {
+    background-color: orange;
+}
