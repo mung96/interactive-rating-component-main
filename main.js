@@ -4,10 +4,10 @@
     const HOVER_COLOR = 'rgb(255, 165, 0)';
 
     const numbers = document.querySelectorAll(".number");
+    let count = 0;
     
     for(let i = 0;i<numbers.length;i++){
         let currentItem=numbers[i];
-        let currentBackground ;
 
         currentItem.addEventListener("mouseover",()=>{
             currentBackground = window.getComputedStyle(currentItem).backgroundColor;

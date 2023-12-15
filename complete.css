@@ -1,0 +1,41 @@
+html{
+    font-family:[Overpass];
+    font-weight: 400, 700;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    box-sizing: border-box;
+}
+#mainbox{
+    background-color: #1F2630;
+    position:absolute;
+    top:25vh;
+    left:40vw;
+    width:350px;
+    height:380px;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-align: center;
+}
+.thankyoumark{
+    margin-top: 25px;
+}
+.title{
+    position:relative;
+    top:35px;
+    color:orange;
+    padding:3px 12px;
+    border-radius: 12px;
+    display: inline;
+    background-color: grey;
+}
+.thankyou{
+    margin-top:70px;
+    color:white;
+    font-size:25px;
+    font-weight: 700;
+}
+.text{
+    margin-top:10px;
+    color:grey;
+}
